@@ -1,0 +1,158 @@
+/* ─── Section Base ───────────────────────────────────── */
+section:not(#page-hero) {
+  padding: 100px 5%;
+  border-radius: 40px;
+  margin: 0 1rem 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--sky);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0f172a;
+  margin-bottom: 1.4rem;
+}
+.section-title.light {
+  color: #0f172a;
+}
+.section-body {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: #475569;
+  max-width: 700px;
+}
+.orange-bar {
+  width: 52px;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+/* ─── Story (stat card + content + floating image) ──────────────────── */
+#page-0 {
+  position: relative;
+  background: #f8fafc;
+  display: grid;
+  grid-template-columns: 260px 1.4fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin: -1.5rem 1rem 1.5rem;
+  padding-top: 4rem;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+/* Column wrapper holding the stat card + hat card stacked */
+.story-col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.story-stat-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(66, 116, 217, 0.16);
+  border-radius: 12px;
+  padding: 2.2rem 1.8rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 10px 30px rgba(8, 11, 32, 0.06);
+}
+.story-col-1 .story-stat-card {
+  margin-top: 0;
+}
+
+/* Hat image below the stat card */
+.story-hat {
+  display: block;
+  width: 100%;
+  max-width: 3000px;
+  height: auto;
+  margin: 0.6rem auto 1rem;
+}
+.story-stat-dot {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.story-stat-num {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+.story-stat-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(226, 238, 243, 0.12);
+  margin-bottom: 1.2rem;
+}
+.story-stat-card h5 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.6rem;
+}
+.story-stat-card p {
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.story-divs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1.8rem;
+  list-style: none;
+}
+.story-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  color: #334155;
+  font-weight: 400;
+  width: 100%;
+}
+.story-tag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--sky);
+  flex-shrink: 0;
+}
+
+.story-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.story-visual img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  animation: none;
+  margin-top: 2.5rem;
+}

@@ -1,0 +1,28 @@
+#page-products .products-intro,
+#page-products .bento-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+#page-products .products-intro {
+  max-width: none;
+  width: 100%;
+}
+
+#page-products .section-title {
+  color: #101a45;
+  font-size: 2.6rem;
+}
+#page-products .section-eyebrow {
+  color: var(--orange);
+  font-size: 0.85rem;
+}
+#page-products .section-body {
+  color: #101a45;
+  font-size: 1.05rem;
+  max-width: none;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}

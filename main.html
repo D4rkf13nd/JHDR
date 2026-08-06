@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JHDR Prefabhouse</title>
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="assets/css/product.css" />
+  <link rel="stylesheet" href="assets/css/team.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/product-line.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/project.css" />
+  <link rel="stylesheet" href="assets/css/services.css" />
+  <link rel="stylesheet" href="assets/css/section.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+</head>
+
+<body>
+
+  <!-- HERO (nav lives inside hero, floating pill style) -->
+  <section id="page-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-scrim"></div>
+
+    <nav class="floating-nav">
+      <div class="nav-pill">
+        <a class="nav-logo" href="#page-hero">
+          <img src="img/logo.png" alt="JHDR Prefabhouse logo" />
+          JHDR <span>Prefabhouse</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#page-0">Story</a></li>
+          <li><a href="#page-1">Product Line</a></li>
+          <li><a href="#page-products">Products</a></li>
+          <li><a href="#page-2">Projects</a></li>
+          <li><a href="#page-3">Services</a></li>
+          <li><a href="#page-team">Team</a></li>
+        </ul>
+      </div>
+      <div class="nav-action-group">
+        <a class="nav-cta" href="#footerFeedbackForm">Get in Touch →</a>
+      </div>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#page-0">Story</a>
+      <a href="#page-1">Product Line</a>
+      <a href="#page-products">Products</a>
+      <a href="#page-2">Projects</a>
+      <a href="#page-3">Services</a>
+      <a href="#page-team">Team</a>
+      <a class="drawer-cta" href="#footerFeedbackForm">Get in Touch</a>
+    </div>
+
+    <!-- Vertical social rail -->
+    <div class="hero-socials">
+      <a href="https://www.facebook.com/profile.php?id=61557531935213" aria-label="Facebook" target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M13.5 22v-8.5h2.8l.4-3.2h-3.2V4.6c0-.9.3-1.6 1.6-1.6h1.7V.1C16.4.1 15.2 0 13.9 0c-2.5 0-4.2 1.5-4.2 4.3v2.4H7v3.2h2.7V22h3.8z" />
+        </svg>
+      </a>
+      <a href="#footerFeedbackForm" aria-label="Contact form">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" />
+          <path d="M4 7l8 6 8-6" />
+        </svg>
+      </a>
+      <a href="tel:+639171801322" aria-label="Phone" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path
+            d="M22 16.9v2.8a2 2 0 0 1-2.2 2a19.8 19.8 0 0 1-8.6-3.1a19.7 19.7 0 0 1-6.1-6.1A19.8 19.8 0 0 1 2 3.2A2 2 0 0 1 4 2h2.8a2 2 0 0 1 2 1.7l.4 2.6a2 2 0 0 1-.6 1.8L7 8.4a16 16 0 0 0 6.6 6.6l1.1-1.6a2 2 0 0 1 1.8-.6l2.6.4a2 2 0 0 1 1.7 2z" />
+        </svg>
+      </a>
+      <span class="hero-socials-line"></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 2020 · Tanauan, Philippines</p>
+      <h1 class="hero-title">We're Building<br>Spaces for the <em>Future.</em></h1>
+      <p class="hero-sub">
+        From remote mountain resorts to busy city construction sites, JHDR has delivered hundreds of units across the
+        archipelago. We don't just sell houses; we sell time and peace of mind.
+      </p>
+
+      <div class="hero-rating">
+        <div class="rating-stars">★★★★★</div>
+        <span>Trusted across the Philippines</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="#page-1">Explore Products <span class="arrow">↗</span></a>
+        <a class="btn-ghost" href="#page-3">Our Services</a>
+      </div>
+    </div>
+
+    <div class="hero-badges">
+      <div class="badge reveal">
+        <div class="badge-num count-up" data-target="2020">0</div>
+        <div class="badge-label">Founded</div>
+      </div>
+      <div class="badge reveal">
+        <div class="badge-num count-up" data-target="2">0</div>
+        <div class="badge-label">Divisions</div>
+      </div>
+      <div class="badge reveal">
+        <div class="badge-num count-up" data-target="6">0</div>
+        <div class="badge-label">Core Services</div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="page-0">
+    <div class="story-col-1">
+      <div class="story-stat-card reveal">
+        <div class="story-stat-dot"></div>
+        <div class="story-stat-num count-up" data-target="100" data-suffix="+">0</div>
+        <div class="story-stat-divider"></div>
+        <h5>Projects, Clients Served</h5>
+        <p>Over 100+ projects completed with care, precision, and a focus on our clients' needs.</p>
+      </div>
+
+      <img class="story-hat" src="img/hat.png" alt="hat" />
+    </div>
+
+
+    <div class="story-text reveal">
+      <p class="section-eyebrow">About Us</p>
+      <div class="orange-bar"></div>
+      <h2 class="section-title">Turning Your Ideas Into Beautifully Crafted Spaces</h2>
+      <p class="section-body">was founded in 2020, and its main objective is to offer the
+        Best in the Industry quality and affordable products and solutions. Our
+        expertise ranges from metal cutting and fabrication using the latest
+        technology from Europe and Asian Countries. Starting with our
+        significant products, consumables, supplies, and services, and a small
+        office composed of 3 people, we have begun to meet the Philippine
+        industry's needs in manufacturing and construction.
+      </p>
+      <p class="section-body" style="margin-top:1rem;">
+        Today, JHDR operates two distinct divisions — Machine Tools and Prefab Container House. We became a
+        subcontractor for prefab installation in 2022, and by 2023 had launched direct sales of prefab units nationwide.
+      </p>
+      <div class="story-divs">
+        <span class="story-tag">Large-scale metal fabrication</span>
+        <span class="story-tag">Electrical works and construction</span>
+        <span class="story-tag">Manufacturing sector solutions</span>
+        <span class="story-tag">Prefab container house supply and installation</span>
+      </div>
+    </div>
+
+    <div class="story-visual reveal">
+      <img src="img/home.png" alt="JHDR Prefabhouse build" />
+      <div class="story-global-badge">
+        <span class="dot"></span> Local Reach
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT LINE -->
+  <section id="page-1">
+    <div class="product-header">
+      <div class="reveal">
+        <p class="section-eyebrow">Our Product Line</p>
+        <div class="orange-bar"></div>
+        <h2 class="section-title light">Innovative Solutions,<br>Exceptional Performance</h2>
+      </div>
+      <div class="reveal" style="text-align:right;">
+        <a class="product-link" href="https://jhdrprefabhouse.com/other-services" target="_blank" rel="noopener">
+          View All Products →
+        </a>
+      </div>
+    </div>
+
+    <div class="use-cases reveal" style="margin-bottom:2.5rem;">
+      <span class="use-tag">Industrial Factory House</span>
+      <span class="use-tag">Warehouse</span>
+      <span class="use-tag">Cold Storage</span>
+      <span class="use-tag">Box Packaging</span>
+      <span class="use-tag">Mobile Board Room</span>
+      <span class="use-tag">Purification Rooms</span>
+      <span class="use-tag">Air-Conditioned Rooms</span>
+    </div>
+
+    <div class="feature-grid reveal">
+      <div class="feature-card">
+        <svg class="feature-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        <h4>Efficiency</h4>
+        <p>Modular sections are ready for assembly and bolting in days to weeks.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="feature-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 8v4l3 3" />
+        </svg>
+        <h4>Cost-Control</h4>
+        <p>Up to 20% cheaper than brick-and-mortar builds.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="feature-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+          <line x1="8" y1="21" x2="16" y2="21" />
+          <line x1="12" y1="17" x2="12" y2="21" />
+        </svg>
+        <h4>Sustainability</h4>
+        <p>Significantly reduced material waste on-site.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="feature-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <h4>High Strength</h4>
+        <p>Designed for maintenance and load-bearing structures — bending and compression resistant without beams or
+          columns.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="feature-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="12" r="3" />
+          <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14" />
+          <path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07" />
+        </svg>
+        <h4>Beautiful Finish</h4>
+        <p>Bright color and clean appearance — surface decoration is unnecessary right out of installation.</p>
+      </div>
+      <div class="feature-card">
+        <svg class="feature-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <line x1="12" y1="2" x2="12" y2="6" />
+          <line x1="12" y1="18" x2="12" y2="22" />
+          <line x1="4.93" y1="4.93" x2="7.76" y2="7.76" />
+          <line x1="16.24" y1="16.24" x2="19.07" y2="19.07" />
+          <line x1="2" y1="12" x2="6" y2="12" />
+          <line x1="18" y1="12" x2="22" y2="12" />
+          <circle cx="12" cy="12" r="4" />
+        </svg>
+        <h4>Versatile Applications</h4>
+        <p>From factories to cold storage, board rooms to purification facilities — adaptable to any industry need.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section id="page-products">
+    <div class="products-intro reveal">
+      <p class="section-eyebrow">Featured Finished Products</p>
+      <div class="orange-bar"></div>
+      <h2 class="section-title">Explore Our Collection</h2>
+      <p class="section-body">Discover our diverse range of prefab solutions designed for every need. From
+  our Practical Home built for everyday efficiency, to the natural warmth of
+  the Woodhouse Unit, to the reinforced security and premium insulation of
+  our Prestige Home — each unit is engineered with the same durable,
+  weather-resistant materials and finished to a standard that's ready to
+  move into on day one. Whether you're outfitting a job site or building a
+  permanent residence, there's a configuration here to match your budget and
+  timeline.</p>
+    </div>
+
+    <div class="bento-carousel reveal">
+      <div class="bento-track-container">
+        <div class="bento-grid" id="bentoTrack">
+
+          <!-- 1: Practical Home -->
+          <div class="bento-card" data-img="img/products/practical.png" data-title="Practical Home"
+            data-desc="A state-of-the-art prefabricated home built for maximum efficiency and durability."
+            data-specs="COLOR:White|SIZE:3M (W) x 6M (L) x 2.8M (H)|FRAME:Galvanized Profile 2.5mm|WALL:50mm Polystyrene Insulation Sandwich Panel Sheet 0.35mm|ROOF:50mm EPS Roof Insulation|FLOOR:18mm Fiber Cement Board|DOOR:High Quality Steel Door|WINDOW:PVC Window 920x1200mm 2pcs">
+            <div class="card-wrapper">
+              <div class="card-image-container">
+                <img src="img/products/practical.png" alt="Practical Home" class="card-image" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Practical Home</h3>
+              </div>
+              <button class="card-badge" aria-label="View details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2: Woodhouse Unit -01 -->
+          <div class="bento-card" data-img="img/products/wood.png" data-title="Woodhouse Unit -01"
+            data-desc="A comprehensive prefab wood-finish unit featuring durable insulation and a clean, natural aesthetic."
+            data-specs="COLOR:Wood|SIZE:3M x 6M x 2.8M|FRAME:2.5mm Galvanized Profile|WALL:50mm Polystyrene Insulation Sandwich Panel Sheet 0.35mm|ROOF:50mm EPS Insulation|FLOOR:18mm Fiber Cement Board|DOOR:Steel|WINDOW:PVC Window 920x1200mm 2pcs">
+            <div class="card-wrapper">
+              <div class="card-image-container">
+                <img src="img/products/wood.png" alt="Woodhouse Unit -01" class="card-image" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Woodhouse Unit -01</h3>
+              </div>
+              <button class="card-badge" aria-label="View details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 3: Prestige Home -->
+          <div class="bento-card" data-img="img/products/steel.png" data-title="Prestige Home"
+            data-desc="A premium, reinforced prefab home with enhanced insulation and anti-theft security features."
+            data-specs="COLOR:White|SIZE:3M (W) x 6M (L) x 2.8M (H)|FRAME:Galvanized Profile 2.5mm|WALL:75mm Polystyrene Insulation Sandwich Panel Sheet 0.35mm|ROOF:50mm EPS Roof Insulation Panel Rib Type|FLOOR:18mm Fiber Cement Reinforced Board|DOOR:Anti-Theft Steel Door 925x2400mm 1pc|WINDOW:Plastic Steel Window 920x1200mm 2pcs">
+            <div class="card-wrapper">
+              <div class="card-image-container">
+                <img src="img/products/steel.png" alt="Prestige Home" class="card-image" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Prestige Home</h3>
+              </div>
+              <button class="card-badge" aria-label="View details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="products-outro reveal">
+        <p>Every unit is fully customizable to your site, layout, and budget. Looking for something specific? <a
+            href="#footerFeedbackForm">Talk to our team</a> and we'll help you find the right fit.</p>
+      </div>
+
+      <!--Villa Designs-->
+      <div class="products-intro reveal" style="margin-top:3.5rem;">
+        <p class="section-eyebrow">Villas</p>
+        <div class="orange-bar"></div>
+        <h2 class="section-title">Our Signature Line</h2>
+        <p class="section-body">
+          A closer look at our most requested builds. Each villa in our Signature Line is a 36 SQM, two-bedroom home with an open living, dining, and kitchen layout, a dedicated toilet and bath, and an included porch — engineered with the same durable, weather-resistant materials as our industrial line, but finished for comfortable, everyday living. From
+          Choi's clean modern lines to Danaya's tropical-ready ventilation, these
+          are the designs our clients come back to ask for by name.
+        </p>
+      </div>
+
+      <div class="bento-track-container">
+        <div class="bento-grid" id="bentoTrackSignature">
+
+          <!-- Choi -->
+          <div class="bento-card" data-img="img/signature/choi.png" data-title="Choi"
+            data-desc="A sophisticated modern villa featuring clean lines, premium finishes, and elegant proportions. Perfect for upscale residential developments and resort properties."
+            data-specs="SIZE:36 SQM|LAYOUT:Open Living - Dining - Kitchen|BEDROOMS:2|FACILITIES:Toilet and Bath|PORCH:Included"
+            data-price="780000"
+            data-gallery-imgs="img/signature/choi-1.png|img/signature/choi-2.png|img/signature/choi-3.png">
+            <div class="card-wrapper">
+              <div class="card-image-container">
+                <img src="img/signature/choi.png" alt="Choi" class="card-image" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Choi</h3>
+              </div>
+              <button class="card-badge" aria-label="View details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Yuan -->
+          <div class="bento-card" data-img="img/signature/yuan.png" data-title="Yuan"
+            data-desc="A contemporary villa with spacious interiors and flexible layouts. Designed for families seeking modern comfort with exceptional durability and low maintenance requirements."
+            data-specs="SIZE:36 SQM|LAYOUT:Open Living - Dining - Kitchen|BEDROOMS:2|FACILITIES:Toilet and Bath|PORCH:Included"
+            data-price="820000"
+            data-gallery-imgs="img/signature/yuan-1.png|img/signature/yuan-2.png|img/signature/yuan-3.png">
+            <div class="card-wrapper">
+              <div class="card-image-container">
+                <img src="img/signature/yuan.png" alt="Yuan" class="card-image" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Yuan</h3>
+              </div>
+              <button class="card-badge" aria-label="View details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+         <!-- Danaya -->
+<div class="bento-card" data-img="img/signature/danaya.png" data-title="Danaya"
+  data-desc="An elegant villa blending tropical aesthetics with modern engineering. Features enhanced ventilation and weather resistance, ideal for beachfront and resort locations."
+ data-specs="SIZE:30 SQM|LAYOUT:Open Living - Dining - Kitchen|BEDROOMS:2|FACILITIES:Toilet and Bath|PORCH:Patio"
+  data-price="680000"
+  data-gallery-imgs="img/signature/danaya-1.png|img/signature/danaya-2.jpg|img/signature/danaya-3.jpg">
+  <div class="card-wrapper">
+    <div class="card-image-container">
+      <img src="img/signature/danaya.png" alt="Danaya" class="card-image" loading="lazy">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Danaya</h3>
+    </div>
+    <button class="card-badge" aria-label="View details">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7" />
+        <polyline points="7 7 17 7 17 17" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Faye -->
+<div class="bento-card" data-img="img/signature/faye.png" data-title="Faye"
+  data-desc="A refined villa design offering a warm, welcoming layout with modern finishes. A versatile choice suited for family homes and rental properties alike."
+  data-specs="SIZE:36 SQM|LAYOUT:Open Living - Dining - Kitchen|BEDROOMS:2|FACILITIES:Toilet and Bath|PORCH:Included"
+  data-price="700000"
+  data-gallery-imgs="img/signature/faye-1.png|img/signature/faye-2.png|img/signature/faye-3.png">
+  <div class="card-wrapper">
+    <div class="card-image-container">
+      <img src="img/signature/faye.png" alt="Faye" class="card-image" loading="lazy">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Faye</h3>
+    </div>
+    <button class="card-badge" aria-label="View details">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7" />
+        <polyline points="7 7 17 7 17 17" />
+      </svg>
+    </button>
+  </div>
+</div>
+ <div class="products-outro reveal" style="margin-top:1.5rem;">
+        <p>Each villa can be tailored in finish, layout, and add-ons to fit your lifestyle. Have a specific design in mind? <a href="#footerFeedbackForm">Talk to our team</a> and we'll bring it to life.</p>
+      </div>
+    </div>
+  </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="page-2">
+    <div class="projects-header reveal">
+      <div>
+        <p class="section-eyebrow">Our Portfolio</p>
+        <div class="orange-bar"></div>
+        <h2 class="section-title light">Proven Excellence<br>Across Industries</h2>
+        <p class="section-body">From industrial factories to mobile offices, we've successfully delivered 100+ projects
+          nationwide. See how we bring vision to life.</p>
+      </div>
+    </div>
+
+    <div class="project-grid reveal">
+
+      <div class="project-card project-card--wide">
+        <div class="project-bg">
+          <img src="img/project1.jpg" alt="Factory & Warehouse Installations" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Industrial</div>
+          <div class="project-name">Factory &amp; Warehouse Installations</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project2.jpg" alt="Cold Storage Facilities" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Commercial</div>
+          <div class="project-name">Cold Storage Facilities</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project3.jpg" alt="Mobile Board Rooms" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Office</div>
+          <div class="project-name">Mobile Board Rooms</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project4.jpg" alt="Mobile Board Rooms" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Office</div>
+          <div class="project-name">Mobile Board Rooms</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project9.jpg" alt="Portable Sanitation Facilities" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Industrial</div>
+          <div class="project-name">Portable Sanitation Facilities</div>
+        </div>
+      </div>
+
+      <div class="project-card project-card--wide">
+        <div class="project-bg">
+          <img src="img/project11.jpg" alt="Mobile Board Rooms" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Office</div>
+          <div class="project-name">Mobile Board Rooms</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project12.jpg" alt="Factory & Warehouse Installations" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Industrial</div>
+          <div class="project-name">Factory &amp; Warehouse Installations</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project13.jpg" alt="Container Housing Units" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Residential</div>
+          <div class="project-name">Container Housing Units</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project9.jpg" alt="Site Offices & Bunkhouses" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Commercial</div>
+          <div class="project-name">Site Offices &amp; Bunkhouses</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-bg">
+          <img src="img/project14.jpg" alt="Portable Sanitation Facilities" loading="lazy">
+        </div>
+        <div class="project-overlay">
+          <div class="project-tag">Industrial</div>
+          <div class="project-name">Portable Sanitation Facilities</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="page-3">
+    <div class="services-intro reveal">
+      <p class="section-eyebrow">Services We Offer</p>
+      <div class="orange-bar"></div>
+      <h2 class="section-title light">End-to-End Support,<br>Every Step</h2>
+      <p class="section-body">From initial consultation through relocation and re-layout — our team is with you at every
+        phase of your project.</p>
+    </div>
+
+    <div class="service-list reveal">
+      <div class="service-item">
+        <div class="service-num">01</div>
+        <div>
+          <h4>Sales &amp; Service</h4>
+          <p>Consult with our experts to discuss your needs and find the best solutions tailored just for you.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">02</div>
+        <div>
+          <h4>Contract Maintenance — Electrical</h4>
+          <p>Scheduled inspections, repairs, and upgrades ensuring optimal performance and safety compliance.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">03</div>
+        <div>
+          <h4>Installation &amp; Commissioning</h4>
+          <p>Guaranteeing optimal performance and full compliance with all safety standards for every installation.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">04</div>
+        <div>
+          <h4>Prefab Relocation</h4>
+          <p>Seamless transport and reassembly of your pre-manufactured buildings at your new site with minimal
+            disruption.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">05</div>
+        <div>
+          <h4>Unit Layout &amp; Re-layout</h4>
+          <p>Optimize your prefab space for efficient arrangement and maximum functionality — at any stage of use.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">06</div>
+        <div>
+          <h4>Consultancy</h4>
+          <p>Tailored solutions and strategic guidance to help you achieve your goals efficiently and effectively.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-left-column reveal">
+        <div class="footer-brand">
+          <a class="nav-logo" href="#page-hero">
+            <img src="img/logo.png" alt="JHDR Prefabhouse logo" class="footer-logo-image">
+            <span>JHDR <span class="footer-logo-name">Prefabhouse</span></span>
+          </a>
+          <p>Best-in-industry quality and affordable prefab container house solutions since 2020. Proudly serving the
+            Philippines' manufacturing and construction sectors.</p>
+        </div>
+
+        <div class="footer-contact-grid">
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div class="footer-contact-content">
+              <span class="footer-contact-label">Call Us</span>
+              <div class="footer-contact-value">
+                <a href="tel:0437832261">(043) 783 2261</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <div class="footer-contact-content">
+              <span class="footer-contact-label">Email Us</span>
+              <div class="footer-contact-value">
+                <a href="#footerFeedbackForm">jhdr.sales.marketing@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="footer-contact-content">
+              <span class="footer-contact-label">Location</span>
+              <div class="footer-contact-value">
+                368 J.Gonzales Street, Purok 8<br>
+                Brgy. Pagaspas, Tanauan<br>
+                Philippines 4232
+              </div>
+
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="footer-contact-content">
+              <span class="footer-contact-label">Opening Hours</span>
+              <div class="footer-hours-list">
+                Monday to Friday<br>
+                9:00 AM – 5:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-feedback reveal">
+        <div class="footer-feedback-header">
+          <span class="footer-contact-label">Send Us Feedback</span>
+          <h3>Got a question or project in mind?</h3>
+        </div>
+        <form class="" id="footerFeedbackForm" onsubmit="return false;">
+          <div class="footer-form-row">
+            <div class="footer-form-group">
+              <label for="fbName">Name</label>
+              <input type="text" id="fbName" name="name" placeholder="Juan Dela Cruz" required>
+            </div>
+            <div class="footer-form-group">
+              <label for="fbEmail">Email</label>
+              <input type="email" id="fbEmail" name="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+          <div class="footer-form-row">
+            <div class="footer-form-group">
+              <label for="fbPhone">Phone No.</label>
+              <input type="tel" id="fbPhone" name="phone" placeholder="09xx xxx xxxx">
+            </div>
+            <div class="footer-form-group">
+              <label for="fbSubject">Subject</label>
+              <input type="text" id="fbSubject" name="subject" placeholder="What's this about?" required>
+            </div>
+          </div>
+          <div class="footer-form-group">
+            <label for="fbMessage">Message</label>
+            <textarea id="fbMessage" name="message" rows="4" placeholder="Tell us about your response..."
+              required></textarea>
+          </div>
+          <button type="submit" class="footer-form-submit" id="footerFormSubmit">
+            Send Message <span class="arrow">↗</span>
+          </button>
+          <p class="footer-form-status" id="footerFormStatus"></p>
+        </form>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom reveal">
+        <p>@ 2020 JHDR Prefabhouse. All rights reserved.</p>
+      </div>
+  </footer>
+  <!-- Product Detail Modal -->
+  <div class="jh-modal-overlay" id="jhModalOverlay">
+    <div class="jh-modal-content">
+      <button class="jh-modal-close" id="jhModalClose">✕</button>
+      <div class="jh-modal-image" id="jhModalImage"></div>
+      <div class="jh-modal-body">
+        <h2 class="jh-modal-title" id="jhModalTitle"></h2>
+        <p class="jh-modal-description" id="jhModalDesc"></p>
+
+        <div class="jh-modal-specs">
+          <div class="jh-modal-specs-title">Key Specifications</div>
+          <div id="jhModalSpecs"></div>
+        </div>
+
+        <div class="jh-modal-gallery">
+          <div class="jh-modal-gallery-title">Gallery</div>
+          <div class="jh-modal-gallery-grid" id="jhModalGallery"></div>
+        </div>
+
+        <a href="#footerFeedbackForm" class="jh-modal-cta" id="jhModalCta">Request Quote</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script src="assets/js/product.js"></script>
+  <script src="assets/js/modal-reveal.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+
+</html>

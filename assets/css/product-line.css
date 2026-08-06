@@ -1,0 +1,203 @@
+#page-1 {
+  background: linear-gradient(135deg, #060919 0%, #080b20 100%);
+  color: var(--white);
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+#page-1 .product-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 2.2rem;
+}
+#page-1 .section-eyebrow {
+  margin-bottom: 0.75rem;
+}
+#page-1 .section-title.light {
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+#page-1 .section-body {
+  color: rgba(226, 238, 243, 0.72);
+  max-width: 760px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+.product-link {
+  color: var(--sky);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid var(--sky);
+  padding-bottom: 0.2rem;
+  align-self: end;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+  display: inline-block;
+}
+.product-link:hover {
+  opacity: 0.75;
+  transform: translateX(2px);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(149, 204, 221, 0.12);
+  border: 1px solid rgba(149, 204, 221, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.feature-card {
+  background: rgba(12, 17, 38, 0.9);
+  padding: 2rem 1.8rem;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+  min-height: 100%;
+}
+.feature-card:hover {
+  background: rgba(66, 116, 217, 0.18);
+  transform: translateY(-3px);
+}
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 1rem;
+  color: var(--sky);
+}
+.feature-card h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.feature-card p {
+  font-size: 0.82rem;
+  color: rgba(226, 238, 243, 0.7);
+  line-height: 1.75;
+}
+
+.use-cases {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+.use-tag {
+  border: 1px solid rgba(226, 238, 243, 0.18);
+  color: rgba(226, 238, 243, 0.75);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s;
+}
+.use-tag:hover {
+  border-color: var(--sky);
+  color: var(--sky);
+  background: rgba(149, 204, 221, 0.09);
+}
+
+/* ─── Villa/Products Outro — base + scroll-reveal animation ────────────
+   .reveal-in is toggled by assets/js/outro-reveal.js via IntersectionObserver
+   when the element scrolls into view. */
+.products-outro {
+  text-align: center;
+  max-width: 640px;
+  margin: 2.2rem auto 0;
+  padding: 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(16, 26, 69, 0.72);
+
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.products-outro a {
+  color: var(--orange);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(41, 54, 129, 0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+.products-outro a:hover {
+  border-color: var(--orange);
+}
+.products-outro.reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  /* Hero: 12rem bottom padding was sized for desktop's absolutely-positioned
+     scroll-cue/badges. Once badges go static and stack their own margin on
+     top, you get double the space. Cut it down. */
+  .hero-content {
+    padding: 7rem 5% 3rem;
+  }
+  .hero-badges {
+    margin: 1.4rem 5% 0;
+  }
+
+  /* Products section: intro + outro margins were tuned for desktop's
+     full-bleed layout, too tall on a stacked mobile column. */
+  .products-intro {
+    margin-bottom: 1.6rem;
+  }
+  #page-products {
+    padding-bottom: 0.5rem;
+  }
+
+  /* Villa outro: tighter spacing + smaller reveal travel distance so it
+     doesn't feel like a big jump on a short mobile viewport. */
+  .products-outro {
+    max-width: 100%;
+    padding: 0 1.4rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 1.6rem auto 0;
+    transform: translateY(10px);
+  }
+
+  /* Section title/body block also carries desktop-sized bottom margins
+     via .product-header — tighten the gap before the feature grid. */
+  #page-1 .product-header {
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 45px 5%; /* was 70px 5% — too much top/bottom air once columns stack */
+  }
+  .services-intro {
+    margin-bottom: 2rem; /* was 3.5rem */
+  }
+  .products-outro {
+    font-size: 0.88rem;
+    padding: 0 1rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .products-outro {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
